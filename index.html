@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IndexDb</title>
+    <link rel="stylesheet" href="main.css"/>
+
+</head>
+<body>
+
+<form id="addForm" name="add">
+    <div>
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text"/>
+    </div>
+    <div>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text"/>
+    </div>
+    <div>
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email"/>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"/>
+    </div>
+    <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone"/>
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <input id="male" type="radio" name="gender" value="M"/>Male
+        <input id="female" type="radio" name="gender" value="F"/>Female
+    </div>
+
+    <div>
+        <button name="submit" type="submit">SUBMIT</button>
+    </div>
+</form>
+
+<table id="records">
+    <thead>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>EMail</td>
+        <td>password</td>
+        <td>Phone</td>
+        <td>Address</td>
+        <td>Gender</td>
+        <td>createdOn</td>
+        <td>Action</td>
+    </tr>
+    </thead>
+</table>
+<script src="app.js"></script>
+</body>
+</html>
